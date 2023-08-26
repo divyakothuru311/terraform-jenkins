@@ -12,7 +12,7 @@ pipeline {
                 // sh 'terraform init'
                 // sh 'terraform validate'
                 // sh 'terraform apply -var-file="dev.tfvars" -auto-approve'
-                sh 'terraform destroy -var-file="dev.tfvars"'
+                sh 'terraform destroy -var-file="dev.tfvars" -auto-approve'
             }
         }
     }
